@@ -1,9 +1,9 @@
 
-var newPhaseActual = prompt('ESCREVA UMA FRASE !!!');
+var newPhaseActual = prompt('ESCREVA UMA FRASE:');
 $('#phrase').text(newPhaseActual);
 var newSecounds = newPhaseActual.split(/\S+/).length - 1;
-var secoudnForPhrase = newSecounds * 2;
-$('#typing-time').text(secoudnForPhrase)
+var secoundForPhrase = newSecounds * 2;
+$('#typing-time').text(secoundForPhrase)
 
 var tempoInicial = document.getElementById('typing-time').innerText;
 var field = $('#field-typing');
@@ -93,7 +93,7 @@ function newScore(){
     var tabela = $('#score').find('tbody');
     var numWords = $('#word-counter').text();
     var numSecounds = document.getElementById('typing-time').innerText;
-    var scoreSecounds = newSecounds - numSecounds;
+    var scoreSecounds = secoundForPhrase - numSecounds;
 
     if(field.val() == phrase){
         var line = "<tr class='correct'>" +
