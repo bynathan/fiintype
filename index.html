@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/libs/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Fiin Typer</title>
+</head>
+<body> 
+    <div class="container">
+        <h1 class="center">Fiin Typer</h1>
+        <p class="center phrase" id="phrase">a</p>
+        
+        <ul class="center">
+            <li class="list__style"><i class="small material-icons icons">description</i><span id="size-phrase">0</span> Palavras</li>
+            <li class="list__style"><i class="small material-icons icons">query_builder</i><span id="typing-time">3</span> Segundos</li>
+        </ul>
+        
+        <textarea id="field-typing" class="field" rows="8" cols="40"></textarea>
+
+        <div>
+            <a class="btn-floating btn-large waves-effect waves-light green" id="reset-button"><i class="material-icons">restore</i></a>
+        </div>
+        
+        <ul class="center">
+            <li><span id="character-counter">0</span> caracteres</li>
+            <li><span id="word-counter">0</span> palavras</li>
+        </ul>
+
+        <section id="score">
+            <h1 class="center">Placar</h1>
+            <table class="centered">
+                <thead>
+                    <tr>
+                        <th>Palavras</th>
+                        <th>Segundos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
