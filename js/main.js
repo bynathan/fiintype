@@ -101,8 +101,8 @@ function newScore(){
         tabela.append(line)
     }else{
         var line = "<tr class='wrong'>" +
-                        "<td>"+ numWords + "</td>"+
-                        "<td>"+ numSecounds + "</td>"+
+                        "<td>"+ "Você perdeu" + "</td>"+
+                        "<td>"+ "Acabou o tempo" + "</td>"+
                     "</tr>";
 
                 tabela.append(line)
