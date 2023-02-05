@@ -94,7 +94,7 @@ function newScore(){
     var numWords = $('#word-counter').text();
     var numSecounds = document.getElementById('typing-time').innerText;
 
-    if(field.text() == phrase){
+    if(field.val() == phrase){
         var line = "<tr class='correct'>" +
                         "<td>"+ numWords + "</td>"+
                         "<td>"+ numSecounds + "</td>"+
