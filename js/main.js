@@ -93,11 +93,12 @@ function newScore(){
     var tabela = $('#score').find('tbody');
     var numWords = $('#word-counter').text();
     var numSecounds = document.getElementById('typing-time').innerText;
+    var scoreSecounds = newSecounds - numSecounds;
 
     if(field.val() == phrase){
         var line = "<tr class='correct'>" +
                         "<td>"+ numWords + "</td>"+
-                        "<td>"+ numSecounds + "</td>"+
+                        "<td>"+ scoreSecounds + "</td>"+
                      "</tr>";
 
         tabela.append(line)
