@@ -1,0 +1,71 @@
+.phrase{
+    font-size: 20px
+}
+
+.field{
+    height: 150px;
+    font-size: 18px;
+    padding: 15px;
+    border: 1px solid #D6D6D6;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+}
+
+.field.correct{
+    box-shadow: 0px 0px 15px 0px #00ff37;
+}
+
+.field.correct:focus{
+    border: 1px solid #00ff37;
+    outline: 1px solid #00ff37;
+}
+
+.field.wrong{
+    box-shadow: 0px 0px 15px 0px #ff0000;
+}
+
+.field.wrong:focus{
+    border: 1px solid #ff0000;
+    outline: 1px solid #ff0000;
+}
+
+.field:disabled{
+    background-color: #F5F5F5;
+}
+
+.field:focus{
+    border: 1px solid #D6D6D6;
+    outline: none;
+}
+
+.list__style{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.list__style span{
+    margin: 0 5px 0 5px;
+}
+
+.btn-floating{
+    opacity: 70%;
+    transition: all .2s;
+}
+
+.btn-floating:hover{
+    opacity: 100%;
+}
+
+.btn-floating.disabled{
+    opacity: 100%;
+}
+
+tr.correct{
+    color: #00ff37;
+}
+
+tr.wrong{
+    color: #ff0000;
+}
