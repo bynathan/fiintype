@@ -1,6 +1,14 @@
+
+var newPhaseActual = prompt('ESCREVA UMA FRASE:');
+$('#phrase').text(newPhaseActual);
+var newSecounds = newPhaseActual.split(/\S+/).length - 1;
+var secoudnForPhrase = newSecounds * 2;
+$('#typing-time').text(secoudnForPhrase)
+
 var tempoInicial = document.getElementById('typing-time').innerText;
 var field = $('#field-typing');
 var phrase = $('#phrase').text();
+
  $('#reset-button').on('click', restartGame);
 
 $(document).ready(() => {
@@ -9,12 +17,6 @@ $(document).ready(() => {
     initializeStopwatch();
     newPhase();
 });
-
-var newPhaseActual = prompt('Escolha uma palavra:');
-$('#phrase').text(newPhaseActual);
-var newSecounds = newPhaseActual.split(/\S+/).length - 1;
-var secoudnForPhrase = newSecounds * 2;
-$('#typing-time').text(secoudnForPhrase)
 
 function atualizaphrase(){
     var numWords = phrase.split(" ").length;
