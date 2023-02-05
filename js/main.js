@@ -1,13 +1,13 @@
 var tempoInicial = document.getElementById('typing-time').innerText;
 var field = $('#field-typing');
 var phrase = $('#phrase').text();
+ $('#reset-button').on('click', restartGame);
 
 $(document).ready(() => {
     atualizaphrase();
     initializeCounters();
     initializeStopwatch();
     newPhase();
-    $('#reset-button').on('click', restartGame);
 });
 
 var newPhaseActual = prompt('Escolha uma palavra:');
