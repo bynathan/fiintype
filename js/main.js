@@ -1,5 +1,5 @@
 
-var newPhaseActual = prompt('ESCREVA UMA FRASE:');
+var newPhaseActual = prompt('ESCREVA UMA FRASE !!!');
 $('#phrase').text(newPhaseActual);
 var newSecounds = newPhaseActual.split(/\S+/).length - 1;
 var secoudnForPhrase = newSecounds * 2;
